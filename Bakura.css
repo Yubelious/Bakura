@@ -113,6 +113,7 @@ html {
     font-family: 'oxygen', arial, sans-serif;
     text-align: center;
     border: 2px solid;
+    z-index: 1;
 }
 #tab-login .button:focus, #tab-register .button:focus, #tab-duel .button:focus, #tab-decks .button:focus, #tab-profile .button:focus, #tab-settings .button:focus {
     -moz-transition-duration: 1s;
@@ -628,10 +629,13 @@ button#game-siding-done {
     position: absolute;
     bottom: 0;
 }
+.editor-deck-container, .editor-search-result, .siding-deck-container {
+    border-color: #F0F0F0
+}
 .engine-text-box {
     font: 1vw/1 'Times New Roman', serif;
     background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.5));
-    border: 0.375vw double #f0f0f0;
+    border: 0.375vw double #F0F0F0;
     height: 2vw;
 }
 #game-container, #editor-container {
@@ -648,7 +652,7 @@ button#game-siding-done {
     text-align: center;
     text-shadow: 0 0 0.5em #666666, 0 0 0.5em #666666, 0 0 1em antiquewhite, 0 0 1em antiquewhite;
     background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
-    border: 1px dashed antiquewhite;
+    border: 1px dashed #F0F0F0;
     margin: 0;
 }
 #card-picture-container {
@@ -662,10 +666,12 @@ button#game-siding-done {
     font-size: 1.5vw;
     text-align: justify;
     background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
-    border: 1px dashed antiquewhite;
+    border: 1px dashed #F0F0F0;
     height: 25vh;
     overflow-y: scroll;
-    padding: 0.25vw;
+}
+#card-description-box p {
+    padding: 0.5vw
 }
 #editor-decks-column, #game-siding-column {
     height: 40vw;
@@ -673,10 +679,9 @@ button#game-siding-done {
     padding: 0 0.25vw;
 }
 #editor-decks-column h4, #editor-search-column h4, #game-siding-column h4, #game-siding-column-2 h4 {
-    color: #30a791;
+    color: #87AF87;
     font-size: 1.75vw;
-    text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
-    background-color: rgba(118, 109, 135, 0.7);
+    background-color: rgba(125, 131, 163, 0.7);
     height: 1.75vw;
     margin-bottom: 0.5vw;
 }
