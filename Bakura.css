@@ -10,6 +10,7 @@ For optimal viewing, press F11.
 ==/UserStyle== */
 
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Noto+Sans|Oxygen');
+
 @-moz-document url("https://duelingnexus.com/") {
 body {
     color: #7D83A3;
@@ -45,7 +46,7 @@ html {
     padding: 0.5vw 0 0 0.5vw;
 }
 .h4, h4 {
-    color: #30A791;
+    color: #827C5C;
     font-size: 2vw;
     text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
     -moz-user-select: none;
@@ -103,7 +104,7 @@ html {
     right: 0; 
 }
 /*Here we have some general button rules.*/
-#tab-login .button, #tab-register .button, #tab-news .button, #tab-duel .button, #tab-decks .button, #tab-profile .button {
+#tab-login .button, #tab-register .button, #tab-news .button, #tab-duel .button, #tab-decks .button, #tab-profile .button, #tab-settings .button {
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
@@ -113,13 +114,13 @@ html {
     text-align: center;
     border: 2px solid;
 }
-#tab-login .button:focus, #tab-register .button:focus, #tab-duel .button:focus, #tab-decks .button:focus, #tab-profile .button:focus {
+#tab-login .button:focus, #tab-register .button:focus, #tab-duel .button:focus, #tab-decks .button:focus, #tab-profile .button:focus, #tab-settings .button:focus {
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
     font-style: italic;
 }
-#tab-login .button:hover, #tab-register .button:hover, #tab-duel .button:hover, #tab-decks .button:hover, #tab-profile .button:hover {
+#tab-login .button:hover, #tab-register .button:hover, #tab-duel .button:hover, #tab-decks .button:hover, #tab-profile .button:hover, #tab-settings .button:hover {
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
@@ -459,12 +460,11 @@ button#lobby-duels-hide-gamelist {
 @-moz-document url("https://duelingnexus.com/") {
 /*This affects the decks tab, but not the deck pages.*/
 #tab-decks a {
-    -moz-transition: color 1s ease-in-out, border-color 2s ease-in-out;
-    -o-transition: color 1s ease-in-out, border-color 2s ease-in-out;
-    transition: color 1s ease-in-out, border-color 2s ease-in-out;
-    color: #C19E4D !important;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     font-size: 1vw;
-    text-shadow: 0px 1px 0.5px rgba(193, 158, 77, 0.6), 0px 0px 2px rgba(48, 167, 145, 1), 0px 1px 2px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 0.5vw #785078, 0 0 0.5vw #785078, 0 0 0.5vw #785078; 
     background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
     float: right;
 }
@@ -472,54 +472,54 @@ button#lobby-duels-hide-gamelist {
     font-style: italic;
 }
  #tab-decks a:hover {
-    -moz-transition: color 1s ease-in-out, border-color 2s ease-in-out;
-    -o-transition: color 1s ease-in-out, border-color 2s ease-in-out;
-    transition: color 1s ease-in-out, border-color 2s ease-in-out;
-    color: #30A791 !important;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     text-decoration: underline;
-    text-shadow: 0px 0.5px 0.5px rgba(48, 167, 145, 0.4), 0px 0px 2px rgba(193, 158, 77, 0.8), 0px 0.5px 2px rgba(0, 0, 0, 0.6);
+    filter: invert(100%);
 }
 #tab-decks .button {
-    color: #C19E4D;
+    color: #785078;
     font-size: 1.5vw;
-    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25);
     background-color: rgba(0, 0, 0, 0.75);
-    border-color: rgba(193, 158, 77, 0.75);
+    border-radius: 50%;
     height: 2.5vw;
-    width: 36vw !important;
+    width: 25vw !important;
     min-width: 0 !important;
-    transform: rotate(-10deg);
     margin: 0;
     padding: 0;
     position: fixed !important;
 }
+#tab-decks .button:focus {
+    font-style :italic
+}
 #tab-decks .button:hover {
-    color: antiquewhite;
-    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
-    background-color: rgba(192, 192, 192, 0.25);
+    text-shadow: 0 0 0.5vw rgba(250, 250, 250, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 #decks-create-button {
     float: left;
-    top: 18vw;
+    top: 25vw;
     right: 0;
     bottom: 0;
-    left: 16vw;
+    left: 25vw;
 }
 #tab-decks p.button {
-    top: 15vw;
-    right: 15vw;
+    top: 25vw;
+    right: 25vw;
 }
 #tab-decks .table {
-    color: #30A791;
+    color: #9BAF87;
     font-size: 1.5vw;
     text-shadow: 0 0 0.25vw rgba(0, 0, 0, 0.5), 0 0 0.25vw rgba(0, 0, 0, 0.5), 0 0 0.25vw rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(0, 0, 0, 0.1);
     margin-top: 25vw;
 }
 #tab-decks .table::before {
+    color: #9BAF87;
     font-size: 1.25vw;
-    content: "Now prepare to feel my wrath!";
-    background: url("https://i62.servimg.com/u/f62/17/89/30/88/65591110.jpg") 0 0/100%; /*Here's a less morbid Moribuden.*/
+    content: "Pardon the interruption, but apparently somebody left me off the guest list.";
+    background: url("https://cdna.artstation.com/p/assets/images/images/009/569/706/large/andy-tantowi-28468748-2060918027253461-611238850590413915-n.jpg?1519727928") 0 0/100%; /*This one is by Andy Tantowi Belzark from Critur Studio.*/
 }
 }
 
@@ -539,18 +539,19 @@ div#tab-profile {
     padding: 0;
 }
 #tab-profile .button { 
-    color: #C19E4D;
+    color: #785078;
     font-size: 1.25vw;
-    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25);
     background-color: rgba(0, 0, 0, 0.75);
-    border-color: rgba(193, 158, 77, 0.75);
+    border-color: #785078;
     position: relative;
     right: 0.6vw;
 }
+#tab-profile .button:focus {
+    font-style :italic
+}
 #tab-profile .button:hover {
-    color: antiquewhite;
-    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
-    background-color: rgba(192, 192, 192, 0.25);
+    text-shadow: 0 0 0.5vw rgba(250, 250, 250, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 #tab-profile .row {
     background-color: rgba(0, 0, 0, 0.5) !important
@@ -559,7 +560,7 @@ div#tab-profile {
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
-    border: 0.5vw solid rgba(193, 158, 77, 0.7);
+    border: 0.5vw solid #827C5C;
     border-radius: 10%;
     box-shadow: 0px 0px 2px rgba(193, 158, 77, 0.7), 0px 0px 2px black;
     position: relative;
@@ -583,6 +584,39 @@ div#tab-profile {
     width: auto;
     padding: 0.25vw 0.5vw;
 }
+}
+
+/*This affects the new settings tab.*/
+#tab-settings .container {
+    width: 100%
+}
+#tab-settings .table {
+    color: #9BAF87;
+    font-size: 1.5vw;
+    text-shadow: 0 0 0.25vw rgba(0, 0, 0, 0.5), 0 0 0.25vw rgba(0, 0, 0, 0.5), 0 0 0.25vw rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin-top: 25vw;
+}
+#tab-settings .table::before {
+    color: #9BAF87;
+    font-size: 1.25vw;
+    filter: invert(100%);
+    content: "Insert Text Here.";
+    background: url("https://cdna.artstation.com/p/assets/images/images/009/569/706/large/andy-tantowi-28468748-2060918027253461-611238850590413915-n.jpg?1519727928") 0 0/100%; /*This one is by Andy Tantowi Belzark from Critur Studio.*/
+}
+#tab-settings .button {
+    color: #785078;
+    font-size: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-color: #785078;
+    padding: 1px;
+}
+#tab-settings .button:focus {
+    font-style :italic
+}
+#tab-settings .button:hover {
+    text-shadow: 0 0 0.5vw rgba(250, 250, 250, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/game"), url-prefix("https://duelingnexus.com/editor") {
