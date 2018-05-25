@@ -668,6 +668,7 @@ button#game-siding-done {
     border: 1px dashed #F0F0F0;
     height: 25vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 #card-description-box p {
     padding: 0.5vw
@@ -745,9 +746,12 @@ hr {
     display: none
 }
 .h4, h4 {
+  background: linear-gradient(#F0F0F0 45%, grey, darkgrey);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     color: #F0F0F0;
-    font-size: 2vw;
-    text-shadow: 0.5px 0.5px 0.5px #827C5C, 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
+    font-size: 1.5vw;
+    font-weight: bold;
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
@@ -758,7 +762,7 @@ hr {
     transition-duration: 2s;
     font: bold 1.125vw 'oxygen', arial, sans-serif;
     cursor: pointer;
-/*    background: linear-gradient(rgba(100, 100, 100, 0.3), rgba(50, 50, 50, 0.5), rgba(0, 0, 0, 0.7));*/
+/**/
     min-height: 1.75vw;
     min-width: 4.5vw;
     padding: 0.25vw 0.5vw;
@@ -769,7 +773,7 @@ hr {
     transition-duration: 2s;
 	filter: invert(100%);
     z-index: 2;
-/*    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.7));*/
+/*;*/
 }
 .engine-button-success {
     background: linear-gradient(rgba(75, 75, 75, 0.5), rgba(150, 150, 150, 0.5));
@@ -882,17 +886,18 @@ hr {
     100% {transform: rotate(360deg);}
 }
 table {
-    color: #C19E4D;
-    font-size: 1.125vw;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0)
 }
 .template-button, #game-to-spectator-button, #game-to-duelist-button, #game-not-ready-button, #game-ready-button, #game-deck-dropdown, #game-rps-first, #game-rps-second, #game-end-button {
+    color: #785078;
+    background: linear-gradient(grey, #F0F0F0);
+    border: #785078 !important;
     width: auto;
     max-width: 28vw;
 }
 #game-room-container {
     background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.8));
-    border: 1px dashed antiquewhite;
+    border: 1px dashed #F0F0F0;
     width: 50vw;
     min-width: 500px;
     margin-top: 8vw;
@@ -904,8 +909,8 @@ table {
     padding: 2vh 1vw 2vh 2vw;
 }
 #game-room-players-table tr, #game-room-information-table tr {
-    border-top: 2px solid antiquewhite;
-    border-bottom: 2px solid antiquewhite;
+    border-top: 2px solid #F0F0F0;
+    border-bottom: 2px solid #F0F0F0;
 	height: 4vw;
 }
 #game-room-information {
