@@ -33,14 +33,14 @@ html {
     padding: 3.5vw 3.5vw 0 3.5vw;
 }
 .h3, h3 {
-    color: antiquewhite;
+    color: #F0F0F0;
     font: italic 1.5vw 'noto sans';
     text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-    height: 2vw;
+    height: 2.5vw;
     width: 100%;
     margin: 0;
     padding: 0.5vw 0 0 0.5vw;
@@ -70,6 +70,9 @@ html {
 .checkbox label:hover {
     color: #C19E4D
 }
+.checkbox input {
+    filter: invert(100%)
+}
 .container {
     width: 100%
 }
@@ -90,11 +93,10 @@ html {
     right: 12.5%;
 }
 .table::before {
-    color: #F0F0F0;
     font-family: arial, san-serif;
     text-align: center;
     background-size: 100%;
-    opacity: 0.75;
+    opacity: 0.6;
     padding: 0.5vw;
     z-index: -1;
     position: absolute;
@@ -136,7 +138,7 @@ html {
     min-height: 0;
     max-height: 25vh;
     width: 100vw;
-    padding-left: 20vw;
+    padding-left: 0;
     margin-right: auto;
     margin-left: auto;
     z-index: 2;
@@ -144,7 +146,8 @@ html {
     top: 0;
 }
 .navbar-text {
-    color: #F0F0F0;
+    color: #0F0F0F;
+    text-shadow: 0 0 0.5em #F0F0F0;
     font-size: 1vw;
     line-height: 3;
     margin: 0 0 0 3vw;
@@ -157,7 +160,6 @@ html {
     color: rgba(155, 175, 135, 0.9) !important;
     font-size: 0.8vw;
     line-height: 1vw;
-    text-shadow: 0 0 0.5vw rgba(125, 145, 105, 1), 0 0 0.5vw rgba(125, 145, 105, 0.9), 0 0 1vw rgba(125, 145, 105, 0.8), 0 0 1.5vw rgba(125, 145, 105, 0.7), 0 0 2vw rgba(125, 145, 105, 0.6), 0 0 2.5vw rgba(125, 145, 105, 0.5);
     border: 2px dotted rgba(155, 175, 135, 0.9);
     height: 3vw;
     min-height: 0;
@@ -441,19 +443,18 @@ button#lobby-duels-hide-gamelist {
     width: 100%;
 }
 #tab-duel-gamelist .table {
-    color: #7D83A3;
+    color: #F0F0F0;
     font-size: 1.5vw;
-    text-shadow: 0 0 0.1em black, 0 0 0.4em #F0F0F0, 0 0 0.6em #F0F0F0, 0 0 0.8em #F0F0F0;
     border: 2px solid rgba(0, 0, 0, 0.1);
 }
 #tab-duel-gamelist .table::before {
     content: "With a new hand comes a whole new perspective.";
     color: #82695C;
     font-size: 1.25vw;
-    background: url("https://i.paigeeworld.com/user-media/1470787200000/54d218632562d82969ab33e0_57ab48e11f8777757c6d5907_rz.jpg") 0 0/100%; /*I have a wonderful Mallemagic for this one.*/
+    background: url("https://i.paigeeworld.com/user-media/1470787200000/54d218632562d82969ab33e0_57ab48e11f8777757c6d5907_rz.jpg") #F0F0F0 0 0/100%; /*I have a wonderful Mallemagic for this one.*/
 }
 .duel-join {
-    margin-right: 1vw !important
+    margin-right: 3.5vw !important
 }
 }
 
@@ -516,7 +517,6 @@ button#lobby-duels-hide-gamelist {
     margin-top: 25vw;
 }
 #tab-decks .table::before {
-    color: #9BAF87;
     font-size: 1.25vw;
     content: "Pardon the interruption, but apparently somebody left me off the guest list.";
     background: url("https://cdna.artstation.com/p/assets/images/images/009/569/706/large/andy-tantowi-28468748-2060918027253461-611238850590413915-n.jpg?1519727928") 0 0/100%; /*This one is by Andy Tantowi Belzark from Critur Studio.*/
@@ -776,6 +776,7 @@ hr {
 /*;*/
 }
 .engine-button-success {
+    color: #F0F0F0;
     background: linear-gradient(rgba(75, 75, 75, 0.5), rgba(150, 150, 150, 0.5));
 }
 .engine-button-success:hover {
@@ -783,6 +784,7 @@ hr {
     background: linear-gradient(rgba(75, 75, 75, 0.7), rgba(150, 150, 150, 0.7));
 }
 .engine-button-danger {
+    color: #F0F0F0;
     background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.5) 10px, rgba(0, 0, 0, 0.5) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
 }
 .engine-button-danger:hover {
@@ -888,7 +890,7 @@ hr {
 table {
     background-color: rgba(0, 0, 0, 0)
 }
-.template-button, #game-to-spectator-button, #game-to-duelist-button, #game-not-ready-button, #game-ready-button, #game-deck-dropdown, #game-rps-first, #game-rps-second, #game-end-button {
+.template-button, #options-show-button, #game-to-spectator-button, #game-to-duelist-button, #game-not-ready-button, #game-ready-button, #game-deck-dropdown, #game-rps-first, #game-rps-second, #game-end-button {
     color: #785078;
     background: linear-gradient(grey, #F0F0F0);
     border: #785078 !important;
@@ -973,7 +975,7 @@ table {
     -o-animation: moveX 3.2s cubic-bezier(0.1 ,0, 0.9, 1) 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
     animation: moveX 3.2s cubic-bezier(0.1 ,0, 0.9, 1) 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
     content: " ";
-    background-color: #C19E4D;
+    background-color: #F0F0F0;
     background-image: linear-gradient(135deg, rgba(192, 192, 192,0.25) -25%, rgba(192, 192, 192, 0.1) 75%);
     border-radius: 50%;
     box-shadow: inset -0.5vw -0.5vw 20px rgba(0, 0, 0, 0.75);
@@ -989,7 +991,7 @@ table {
     -o-animation: moveX 3.2s linear 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
     animation: moveX 3.2s linear 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
     content: " ";
-    background-color: rgba(118, 109, 135, 0.5);
+    background-color: rgba(16, 16, 16, 0.5);
     border-radius: 50%;
     display: block;
     height: 4.5vw;
