@@ -1037,6 +1037,7 @@ table {
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    filter: invert(100%);
 }
 .game-avatar-area {
     font-size: 1.125vw;
