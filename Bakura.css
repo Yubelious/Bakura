@@ -629,9 +629,9 @@ button#game-siding-done {
     bottom: 0;
 }
 .h4, h4 {
-  background: linear-gradient(#F0F0F0 45%, grey, darkgrey);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(#F0F0F0 45%, grey, darkgrey);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: #F0F0F0;
     font-size: 1.5vw;
     font-weight: bold;
@@ -1124,10 +1124,10 @@ body {
 }
 html {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
-    background: url(https://img00.deviantart.net/fa89/i/2015/353/8/b/bakura_dark_sanctuary__yu_gi_oh_wallpaper_by_hardii-d9kn5lx.png) black 0 0/cover fixed; /*Image by Hardii.*/;
+    background: url(https://img00.deviantart.net/fa89/i/2015/353/8/b/bakura_dark_sanctuary__yu_gi_oh_wallpaper_by_hardii-d9kn5lx.png) 0 0/cover fixed; /*Image by Hardii.*/;
 }
 .editor-search-result {
-    color: antiquewhite;
+    color: #F0F0F0;
     cursor: pointer;
     background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
     border: 0.15vw solid #F0F0F0;
@@ -1159,9 +1159,9 @@ html {
     transition-duration: 2s;
     font-family: 'oxygen', arial, sans-serif;
     font-weight: bold;
-    color: antiquewhite;
+    color: #F0F0F0;
     background-color: rgba(100, 100, 100, 0.4);
-    border: 0.5px solid #F0F0F0;
+    border: 0;
     height: 3.14159265358979323846264338327950288419716939937511vh /*2.71828182845904523536028747135266249775724709369995vh*/; /*pi and e*/
     padding: 0 1.5vw;
     float: left;
@@ -1173,6 +1173,7 @@ html {
     -o-transition-duration: 1s;
     transition-duration: 1s;
     background-color: rgba(140, 140, 140, 0.8);
+    filter: invert(100%);
     padding: 0 1.5vw;
 }
 .engine-button:active {
@@ -1202,32 +1203,34 @@ html {
     background-color: rgba(48, 167, 145, 0.9)
 }
 #editor-menu-container {
-    font-weight: bold;
     background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
+    border: 0;
     height: 3vw;
-    max-height: 10vh;
+    max-height: 15vh;
 }
 #editor-menu-title {
-    color: #C19E4D;
+    background: linear-gradient(#F0F0F0 45%, grey, darkgrey);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #F0F0F0;
     font-size: 1.75vw;
-    text-shadow: 0px 0px 2px black, 1px 1px 2px gold, 1px 1px 1px silver;
+    font-weight: bold;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
     position: absolute;
     left: 59vw;
 }
-#editor-menu-title:after {
-    color: black;
+#editor-menu-container:after {
+    color: #9BAF87;
     content: "Dueling Nexus";
-    font: 1.75vw/6.25 'berkshire swash', papyrus, 'comic sans ms', cursive, sans-serif;
+    font: 2vw/6.25 'berkshire swash', papyrus, 'comic sans ms', cursive, sans-serif;
     text-align: center;
-    text-shadow: 0 0 6vw #666666, 0 0 6vw #666666, 0 0 6vw #666666, 0 0 6vw #666666, 0 0 6vw #666666, 0 0 6vw #666666, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC;
-    letter-spacing: 0.1vw;
-    word-spacing: 0.2vw;
-    background: url(https://img00.deviantart.net/f91b/i/2013/008/5/2/yu_gi_oh__japanese_logo_by_kingvegito-d5qu0xw.png) 0 0/14vw 7vw;
-    height: 7vw;
-    width: 14vw;
-    position: fixed;
-    bottom: 6vh;
-    right: 3vw;
+    text-shadow: 0 0 0.5em #F0F0F0;
+    position: absolute;
+    right: 5vw;
+    bottom: 0;
+    z-index: 2;
 }
 #editor-search-column {
     border-bottom: 0.15vw solid #F0F0F0
