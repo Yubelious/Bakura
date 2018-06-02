@@ -845,6 +845,7 @@ hr {
 }
 /*This affects the options button.*/
 #options-area {
+    filter: drop-shadow(-1em 0.5em 1em #0F0F0F);
     position: fixed;
     right: 25vw;
     bottom: 40px;/*This should move the button that opens the option window above the taskbar of your computer.*/
@@ -1124,7 +1125,7 @@ body {
 }
 html {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
-    background: url(https://img00.deviantart.net/fa89/i/2015/353/8/b/bakura_dark_sanctuary__yu_gi_oh_wallpaper_by_hardii-d9kn5lx.png) 0 0/cover fixed; /*Image by Hardii.*/;
+    background: url(https://cdn.discordapp.com/attachments/448664507540045827/452513041830117387/11111111.PNG) 0 3vh/100vw 98vh; /*Wallpaper by Ayasai.*/
 }
 .editor-search-result {
     color: #F0F0F0;
@@ -1159,10 +1160,12 @@ html {
     transition-duration: 2s;
     font-family: 'oxygen', arial, sans-serif;
     font-weight: bold;
+    font-size: 1.5vh;
     color: #F0F0F0;
     background-color: rgba(100, 100, 100, 0.4);
     border: 0;
-    height: 3.14159265358979323846264338327950288419716939937511vh /*2.71828182845904523536028747135266249775724709369995vh*/; /*pi and e*/
+    height: 3.14159265358979323846264338327950288419716939937511vh;
+    min-height: 0;
     padding: 0 1.5vw;
     float: left;
     position: relative;
@@ -1205,8 +1208,7 @@ html {
 #editor-menu-container {
     background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
     border: 0;
-    height: 3vw;
-    max-height: 15vh;
+    height: 5vh;
 }
 #editor-menu-title {
     background: linear-gradient(#F0F0F0 45%, grey, darkgrey);
