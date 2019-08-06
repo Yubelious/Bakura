@@ -14,17 +14,29 @@ html {
     top: 0;
     left: 2vw;
 }
-/*Here we have some general button and label rules.*/
+/*Here we have some general clicky thing rules.*/
 a {
     color: #7D83A3;
     text-shadow: 0 0 1vw #827C5C, 0 0 2vw #827C5C, 1vw 2vw 3vw black;
 }
 a:hover, a:focus {
-    color: #827C5C;
-    text-shadow: 0 0 1vw #7D83A3, 0 0 2vw #7D83A3, 1vw 2vw 3vw black;
+    filter: invert(100%)
 }
 button, input {
     font-family: 'oxygen', sans-serif
+}
+form input[type="email"], form input[type="password"], form input[type="text"], input[type="text"], #login-submit, #register-area button, #recover-submit {
+    color: #7D83A3;
+    background-color: #F0F0F0;
+    border-color: #7D83A3;
+    box-shadow: -.15vw -.15vw .3vw #7D83A3, -.15vw .15vw .3vw #7D83A3, .15vw -.15vw .3vw #7D83A3, .15vw .15vw .3vw #7D83A3;
+    opacity: 0.7;
+}
+form input[type="email"]:focus, form input[type="password"]:focus, form input[type="text"]:focus, input[type="text"]:focus, #login-submit:focus, #register-area button:focus, #recover-submit:focus {
+    filter: invert(100%)
+}
+form input[type="email"]:hover, form input[type="password"]:hover, form input[type="text"]:hover, input[type="text"]:hover, #recover-email:hover, #login-submit:hover, #register-area button:hover, #recover-submit:hover {
+    opacity: 1
 }
 label {
     font-family: 'noto sans', sans-serif
