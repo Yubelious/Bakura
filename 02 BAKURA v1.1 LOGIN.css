@@ -1,0 +1,15 @@
+@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/home"), url("https://duelingnexus.com/donate") {
+/*SECTION 02 LOGIN*/
+/*This affects the login, register, and recover pages, since they all key off of the same things.*/
+/*If it shows up on the Login or Register tab, it's in here.*/
+#login-area, #register-area, #recover-area, #news-area, #donate-area {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(209, 209, 209, 0), rgba(209, 209, 209, 0.6), rgba(209, 209, 209, 0.4));
+    filter: invert(100%);
+}
+#links-area {
+    background: radial-gradient(rgba(209, 209, 209, 0.4), rgba(209, 209, 209, 0.6), rgba(209, 209, 209, 0), rgba(255, 255, 255, 0));
+}
+.login-error, .register-error, #recover-area::before {
+    filter: invert(100%)
+}
+}
