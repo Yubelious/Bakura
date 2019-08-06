@@ -27,7 +27,7 @@ button, input {
 }
 form input[type="email"], form input[type="password"], form input[type="text"], input[type="text"], #login-submit, #register-area button, #recover-submit {
     color: #7D83A3;
-    background-color: #F0F0F0;
+    background-color: #0F0F0F;
     border-color: #7D83A3;
     box-shadow: -.15vw -.15vw .3vw #7D83A3, -.15vw .15vw .3vw #7D83A3, .15vw -.15vw .3vw #7D83A3, .15vw .15vw .3vw #7D83A3;
     opacity: 0.7;
