@@ -1,0 +1,103 @@
+@-moz-document url("https://duelingnexus.com/home"), url("https://duelingnexus.com/duel"), url("https://duelingnexus.com/gamelist"), url("https://duelingnexus.com/hostgame") {
+/*Section 04 DUEL*/
+/*This section applies to /duel and /gamelist, which are both found by clicking Duel Zone from the navbar. But it doesn't affect duels in any way.*/
+/*This affects the donation article.*/
+#duel-area-donations {
+    transition-duration: 1s;
+    transition-property: filter;
+    font-size: 2vh;
+    color: antiquewhite;
+    background: radial-gradient(silver 3%, darkgray 9%, rgba(0, 0, 0, 0.5) 81%);
+    border: none;
+    width: auto;
+    margin: 0 25%;
+    z-index: 4;
+    position: fixed;
+    top: 7vh;
+}
+#duel-area-donations:hover {
+    transition-duration: 1s;
+    transition-property: filter;
+    filter: invert(100%);
+}
+#duel-area-donations-bar {
+    background-color: silver;
+    background: linear-gradient(to right, silver, darkgray, rgba(169, 169, 169, 0));
+    margin: 0;
+    padding: 0;    
+}
+#duel-area div {
+    padding-top: 7vh
+}
+/*This affects the buttons and the region selector below them.*/
+p button, #gamelist-buttons button, .button {
+    color: #785078;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25);
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-color: #785078;
+}
+#duel-area button {
+    width: 100%;
+    margin-top: 4vh; /*Reduce this number if the taskbar covers the interface on the duel home tab, or change your resolution.*/
+}
+#duel-area button:hover, #gamelist-buttons button:hover, .button:hover {
+    text-shadow: 0 0 0.5vw rgba(250, 250, 250, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
+    z-index: 2;
+}
+#gamelist-buttons button:hover, .button:hover {
+    filter: invert(100%)
+}
+p button img {
+    min-height: 3vh;
+    max-height: 3vh;
+}
+p#region-select {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    text-align: left;
+    text-indent: 2vw;
+    transform: translateX(-1vw)
+}
+/*This affects the boxes above the table.*/
+#gamelist-buttons, #gamelist-filters {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 75vw;
+    z-index: 2;
+    position: absolute;
+    top: 10vh;
+    left: 13.5vw;
+}
+#gamelist-buttons p, #gamelist-buttons button {
+    font-size: 3vh;
+    text-align: center;
+    width: 25vw;
+    padding: 0;
+}
+#gamelist-filters {
+    top: 20vh
+}
+/*This affects the table that lists the available duels.*/
+#gamelist-container table {
+    color: #F0F0F0;
+    font-size: 1.5vw;
+    border: .3vw solid rgba(0, 0, 0, 0.1);
+}
+#gamelist-container table::before {
+    font-size: 1.25vw;
+    content: "With a new hand comes a whole new perspective.";
+    color: #82695C;
+    background: url("https://i.paigeeworld.com/user-media/1470787200000/54d218632562d82969ab33e0_57ab48e11f8777757c6d5907_rz.jpg") #F0F0F0 0 0/100%;
+ /*I have a wonderful Mallemagic for this one.*/;
+  }
+.button {
+    font-size: 1.25vw;
+    width: 50.07%;
+    margin: 0 -0.3vw -2px -2px;
+    padding: 1px;
+}
+/*This section affects the page that opens when you click "host a custom game" from /gamelist.*/
+#custom-game-area p {
+    margin: 5vh 0
+}
+}
