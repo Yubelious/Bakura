@@ -1,0 +1,49 @@
+@-moz-document url("https://duelingnexus.com/decks") {
+/*SECTION 05 DECKS*/
+/*This affects the deck page, but not the editor pages.*/
+#decks-area[data-v-6f705b54] {
+    width: 100vw;
+    position: relative;
+    top: 6vh;
+    left: 0;
+}
+#decks-area h2 {
+    float: left
+}
+#decks-buttons {
+    width: auto;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 10vw;
+    left: 15vw;
+}
+#decks-buttons button {
+    padding: 1vh
+}
+#decks-buttons .fake-button {
+    float: right
+}
+.table-button {
+    font-size: 1vw;
+    background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
+.table-button:hover {
+    text-decoration: underline;
+    filter: invert(100%);
+}
+#decks-container table {
+    color: #9BAF87;
+    font-size: 1.5vw;
+    text-shadow: 0 0 0.25vw rgba(0, 0, 0, 0.5), 0 0 0.25vw rgba(0, 0, 0, 0.5), 0 0 0.25vw rgba(0, 0, 0, 0.5);
+    border: .15vw solid antiquewhite;
+    border: .15vw solid rgba(250, 235, 215, 0.25);
+    margin-top: 0;
+}
+#decks-container table::before {
+    font-size: 1.25vw;
+    content: "Pardon the interruption, but apparently somebody left me off the guest list.";
+    background: url("https://cdna.artstation.com/p/assets/images/images/009/569/706/large/andy-tantowi-28468748-2060918027253461-611238850590413915-n.jpg?1519727928") 0 0/100%;
+ /*This one is by Andy Tantowi Belzark from Critur Studio.*/;
+  }
+}
