@@ -1,4 +1,4 @@
-@-moz-document url-prefix("https://duelingnexus.com/") {
+@-moz-document url-prefix("https://duelingnexus.com/login"), url-prefix("https://duelingnexus.com/register"), url-prefix("https://duelingnexus.com/recover"), url-prefix("https://duelingnexus.com/home"), url-prefix("https://duelingnexus.com/duel"), url-prefix("https://duelingnexus.com/gamelist"), url-prefix("https://duelingnexus.com/hostgame"), url-prefix("https://duelingnexus.com/decks"), url-prefix("https://duelingnexus.com/profile"), url-prefix("https://duelingnexus.com/donate") {
 /*SECTION 01 NAVGLOBAL*/
 /*This section is global code that applies to all of the navigation pages. For global code for the game and deckbuilding pages, go to GAMEGLOBAL*/
 body {
@@ -23,16 +23,17 @@ a:hover, a:focus {
     filter: invert(100%)
 }
 button, input {
-    font-family: 'oxygen', sans-serif
+    transition-property: opacity;
+    font-family: 'oxygen', sans-serif;
 }
 form input[type="email"], form input[type="password"], form input[type="text"], input[type="text"], #login-submit, #register-area button, #recover-submit {
     color: #7D83A3;
-    background-color: #0F0F0F;
+    background-color: #F0F0F0;
     border-color: #7D83A3;
     box-shadow: -.15vw -.15vw .3vw #7D83A3, -.15vw .15vw .3vw #7D83A3, .15vw -.15vw .3vw #7D83A3, .15vw .15vw .3vw #7D83A3;
     opacity: 0.7;
 }
-form input[type="email"]:focus, form input[type="password"]:focus, form input[type="text"]:focus, input[type="text"]:focus, #login-submit:focus, #register-area button:focus, #recover-submit:focus {
+p button:hover, form input[type="email"]:focus, form input[type="password"]:focus, form input[type="text"]:focus, input[type="text"]:focus, #login-submit:focus, #register-area button:focus, #recover-submit:focus {
     filter: invert(100%)
 }
 form input[type="email"]:hover, form input[type="password"]:hover, form input[type="text"]:hover, input[type="text"]:hover, #recover-email:hover, #login-submit:hover, #register-area button:hover, #recover-submit:hover {
@@ -65,11 +66,11 @@ label {
 #navbar-middle button, #navbar-right button {
     padding: 0 .5vw
 }
-#navbar-left button:focus, #navbar-middle button:focus, #navbar-right button:focus, .fake-button:focus {
+#navbar-left button:focus, #navbar-middle button:focus, #navbar-right button:focus, #decks-buttons button:focus, .fake-button:focus, #my-profile button:focus {
     font-style: italic;
     border: .15vw dotted;
 }
-#navbar-left .button:hover, #navbar-middle button:hover, #navbar-right button:hover, .fake-button:hover {
+#navbar-left .button:hover, #navbar-middle button:hover, #navbar-right button:hover, #decks-buttons button:hover, .fake-button:hover, #my-profile button:hover {
     transition: 2s all;
     background-color: rgba(191, 191, 191, .5);
     filter: invert(100%);
