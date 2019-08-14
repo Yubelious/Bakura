@@ -1,0 +1,55 @@
+@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/home") {
+/*SECTION 03 HOME*/
+/*This section applies to the home page, as well as an awesome login animation I made.*/
+@keyframes disappear {
+    0% {opacity: 1}
+    25% {opacity: 1}
+    100% {opacity: 0}
+}
+p:nth-child(2) {
+    animation: disappear 3s;
+    font-size: 5vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 0, 0, 0)/*rgba(46, 46, 46, 0)*/, rgba(46, 46, 46, 0.8) 60%, rgba(46, 46, 46, 0.4));
+    height: 100%;
+    width: 100%;
+    padding-top: 40vh;
+    opacity: 0;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+p:nth-child(3) {
+    margin-top: 7vh
+}
+#adsense {
+    width: auto;
+    margin: 0 25%;
+    z-index: 4;
+    position: fixed;
+    top: 7vh;
+}
+#home-area div {
+    padding-top: 3vh
+}
+p button {
+    animation-name: appear;
+    animation-duration: 5s;
+    font-size: 1.75vw;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25);
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+#home-area button {
+    color: #785078;
+    width: 100%;
+    margin-top: 4vh; /*Reduce this number if the taskbar covers the interface on the duel home tab, or change your resolution.*/
+}
+#home-area button:hover
+  {
+    text-shadow: 0 0 0.5vw rgba(250, 250, 250, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
+    z-index: 2;
+  }
+
+}
