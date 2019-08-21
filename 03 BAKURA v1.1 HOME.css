@@ -20,14 +20,14 @@ p:nth-child(2) {
     left: 0;
 }
 p:nth-child(3) {
-    margin-top: 7vh
+    margin-top: 9vh
 }
 #adsense {
     width: auto;
     margin: 0 25%;
     z-index: 4;
     position: fixed;
-    top: 7vh;
+    top: 9vh;
 }
 #home-area div {
     padding-top: 3vh
