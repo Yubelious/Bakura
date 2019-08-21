@@ -1,0 +1,48 @@
+@-moz-document url-prefix("https://duelingnexus.com/game"), url-prefix("https://duelingnexus.com/editor") {
+/*SECTION 06 GAMEGLOBAL*/
+/*This affects the siding screen, and the related elements of the deck pages.*/
+body {
+    font: 2vh/1 'noto sans', arial, sans-serif;
+}
+h4 {
+    background: linear-gradient(#F0F0F0 45%, grey, darkgrey);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    color: #F0F0F0;
+    font-size: 1.5vw;
+    font-weight: bold;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+input, label {
+    font-size: 2vh;
+    opacity: .7;
+    cursor: pointer;
+}
+input:hover, label:hover {
+    opacity: 1
+}
+.editor-deck-container, .editor-search-result, .siding-deck-container {
+    border-color: #F0F0F0
+}
+
+.engine-text-box {
+    background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.5))
+}
+#card-name {
+    border: .15vh dashed #F0F0F0
+}
+#card-description-box {
+    color: #F0F0F0;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: .15vh dashed #F0F0F0;
+}
+#editor-decks-column h4, #editor-search-column h4, #game-siding-column h4, #game-siding-column-2 h4
+  {
+    color: #87AF87;
+    background-color: rgba(125, 131, 163, 0.7);
+}
+}
