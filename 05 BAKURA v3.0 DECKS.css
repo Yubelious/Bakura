@@ -4,7 +4,7 @@
 #decks-area[data-v-6f705b54] {
     width: 100vw;
     position: relative;
-    top: 6vh;
+    top: 7vh;
     left: 0;
 }
 #decks-area h2 {
@@ -14,7 +14,7 @@
     width: auto;
     z-index: 2;
     position: absolute;
-    top: 0;
+    top: 1vh;
     right: 10vw;
     left: 15vw;
 }
